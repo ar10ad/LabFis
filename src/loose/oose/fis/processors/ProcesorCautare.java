@@ -12,18 +12,4 @@ public class ProcesorCautare implements Procesor {
     }
 
     @Override
-    public int proceseaza(ArrayList<Document> documente) {
-        int res = 0;
 
-        for (Document document : documente) {
-            String[] continut = document.analizeaza();
-            for (String cuvant : continut) {
-                if (cuvant.equals(text)) {
-                    res++;
-                }
-            }
-        }
-
-        return res;
-    }
-}
